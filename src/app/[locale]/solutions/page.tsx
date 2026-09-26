@@ -35,7 +35,8 @@ export default async function LocaleSolutionsPage({ params }: Props) {
         <div className="grid gap-5 md:grid-cols-2">
           {t.solutions.cards.map((s) => (
             <div key={s.problem} className="rounded-xl border border-border/60 bg-card/40 p-6">
-              <p className="text-sm font-medium text-primary">
+              <p className="text-xs font-semibold tracking-wide text-primary uppercase">{s.wp}</p>
+              <p className="mt-2 text-sm font-medium text-primary">
                 <span className="mr-1.5 text-xs tracking-wide text-muted-foreground/70 uppercase">
                   {t.solutions.problemLabel}
                 </span>
@@ -46,6 +47,12 @@ export default async function LocaleSolutionsPage({ params }: Props) {
                   {t.solutions.approachLabel}
                 </span>
                 {s.approach}
+              </p>
+              <p className="mt-3 text-sm text-muted-foreground">
+                <span className="mr-1.5 text-xs tracking-wide text-muted-foreground/70 uppercase">
+                  {t.solutions.fitLabel}
+                </span>
+                {s.fit}
               </p>
               <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground/80">
                 <span className="rounded-full border border-border px-2 py-0.5 font-medium">

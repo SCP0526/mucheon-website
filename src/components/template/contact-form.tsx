@@ -83,15 +83,34 @@ export function ContactForm({ locale = "en" }: { locale?: Locale }) {
           />
         </div>
       </div>
-      <div className="mt-5 grid gap-2">
-        <Label htmlFor="message">{t.message}</Label>
-        <Textarea
-          id="message"
-          name="message"
-          placeholder={t.messagePlaceholder}
-          className="min-h-36"
-          required
-        />
+      <div className="mt-5 grid gap-5 sm:grid-cols-2">
+        <div className="grid gap-2 sm:col-span-2">
+          <Label htmlFor="problem">{t.problem}</Label>
+          <Textarea
+            id="problem"
+            name="problem"
+            placeholder={t.problemPlaceholder}
+            className="min-h-24"
+            required
+          />
+        </div>
+        <div className="grid gap-2">
+          <Label htmlFor="existingSystem">{t.existingSystem}</Label>
+          <Input id="existingSystem" name="existingSystem" placeholder={t.existingSystemPlaceholder} />
+        </div>
+        <div className="grid gap-2">
+          <Label htmlFor="constraints">{t.constraints}</Label>
+          <Input id="constraints" name="constraints" placeholder={t.constraintsPlaceholder} />
+        </div>
+        <div className="grid gap-2 sm:col-span-2">
+          <Label htmlFor="desiredOutcome">{t.desiredOutcome}</Label>
+          <Textarea
+            id="desiredOutcome"
+            name="desiredOutcome"
+            placeholder={t.desiredOutcomePlaceholder}
+            className="min-h-20"
+          />
+        </div>
       </div>
       {!configured ? (
         <>

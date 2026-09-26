@@ -70,8 +70,14 @@ export const zhPagesD = {
     namePlaceholder: "Ada Lovelace",
     email: "邮箱",
     emailPlaceholder: "ada@example.com",
-    message: "留言",
-    messagePlaceholder: "告诉我们你在做什么……",
+    problem: "问题",
+    problemPlaceholder: "用你自己的话描述业务问题——不需要技术规格书。",
+    existingSystem: "现有系统（可选）",
+    existingSystemPlaceholder: "涉及哪些系统？什么需要和什么打通？",
+    desiredOutcome: "期望结果（可选）",
+    desiredOutcomePlaceholder: "成功具体是什么样子？",
+    constraints: "约束条件（可选）",
+    constraintsPlaceholder: "合规、期限、环境、预算边界……",
     send: "发送留言",
     sending: "发送中……",
     sentTitle: "留言已发送",
@@ -225,7 +231,7 @@ export const zhPagesD = {
     ],
     more: "需要特定材料——安全问卷、数据处理安排或完整许可清单？请直接询问。详细材料按请求提供；如果某项不可提供，我们会明说。",
     basisTitle: "依据与状态",
-    basisNote: "上文引用的外部标准仅作为已发布参考，出处内部留痕；MUCHEON 不持有任何认证，也不提供法律意见。本页陈述我们当前的公开商业基线（LEVEL 2）——只有事实与边界，不构成合同。之后逐项目签署、经法律复核的合同可以更具体。",
+    basisNote: "上文引用的外部标准仅作为已发布参考，出处内部留痕；MUCHEON 不持有任何认证，也不提供法律意见。证据边界：所有能力最高成熟至 L4（模板验证）；L5 = 0——我们公开的证据矩阵中不存在任何真实客户生产证据。本页陈述我们当前的公开商业基线（LEVEL 2）——只有事实与边界，不构成合同。之后逐项目签署、经法律复核的合同可以更具体。",
     engagementTitle: "与我们合作",
     engagement: [
       {
@@ -234,7 +240,7 @@ export const zhPagesD = {
       },
       {
         h: "签约方式",
-        p: "合作遵循书面流程：探索 → 范围 → 方案报价 → 约定验收标准。范围变更只能通过书面变更请求进行。工作方式详见“工作方式”页。",
+        p: "合作遵循书面流程：探索 → 范围 → 方案报价 → 约定验收标准。可在任何技术讨论之前先行签署 NDA；项目在我们的 MSA/SOW 结构下成文——一份主协议，每个范围一份 SOW。范围变更只能通过书面变更请求进行。工作方式详见“工作方式”页。",
       },
       {
         h: "付款与税务",
@@ -245,7 +251,7 @@ export const zhPagesD = {
     delivery: [
       {
         h: "交付",
-        p: "仅在验收签署后交付：代码、部署配置、文档以及已知限制清单。",
+        p: "仅在验收签署后交付：代码、部署配置、文档以及已知限制清单。为项目新建的特定知识产权归属以签署合同为准——我们自验证基线复用的资产仍归我们所有；专为项目构建的部分按合同移交。",
       },
       {
         h: "验收",

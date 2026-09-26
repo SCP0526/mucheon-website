@@ -71,8 +71,14 @@ export const enPagesD = {
     namePlaceholder: "Ada Lovelace",
     email: "Email",
     emailPlaceholder: "ada@example.com",
-    message: "Message",
-    messagePlaceholder: "Tell us what you're building…",
+    problem: "Problem",
+    problemPlaceholder: "Describe the business problem in your own words — no technical spec required.",
+    existingSystem: "Existing system (optional)",
+    existingSystemPlaceholder: "What systems are involved? What must talk to what?",
+    desiredOutcome: "Desired outcome (optional)",
+    desiredOutcomePlaceholder: "What would success look like, concretely?",
+    constraints: "Constraints (optional)",
+    constraintsPlaceholder: "Compliance, deadlines, environment, budget boundaries…",
     send: "Send message",
     sending: "Sending…",
     sentTitle: "Message sent",
@@ -227,7 +233,7 @@ export const enPagesD = {
     ],
     more: "Need something specific — a security questionnaire, a data-handling arrangement, or a full license list? Ask us. Detailed materials are provided on request, and we will say plainly when something is not available.",
     basisTitle: "Basis & status",
-    basisNote: "External standards are cited above as published references only, with provenance kept internally; MUCHEON holds no certifications and offers no legal advice. This page states our current public commercial baseline (LEVEL 2) — facts and boundaries, not a contract. Project contracts, signed later and reviewed by counsel, can be more specific.",
+    basisNote: "External standards are cited above as published references only, with provenance kept internally; MUCHEON holds no certifications and offers no legal advice. Evidence boundary: all capabilities mature at most to Level 4 (Template Validated); Level 5 = 0 — no real-customer production evidence exists anywhere in our published matrix. This page states our current public commercial baseline (LEVEL 2) — facts and boundaries, not a contract. Project contracts, signed later and reviewed by counsel, can be more specific.",
     engagementTitle: "Working with us",
     engagement: [
       {
@@ -236,7 +242,7 @@ export const enPagesD = {
       },
       {
         h: "Contracting",
-        p: "Engagements follow a written process: Discovery → Scope → Proposal → agreed acceptance criteria. Scope changes only through written change requests. How we work is described on the How We Work page.",
+        p: "Engagements follow a written process: Discovery → Scope → Proposal → agreed acceptance criteria. An NDA can be signed before any technical discussion; projects are documented on our MSA/SOW structure — one master agreement, one statement of work per scope. Scope changes only through written change requests. How we work is described on the How We Work page.",
       },
       {
         h: "Payment & tax",
@@ -247,7 +253,7 @@ export const enPagesD = {
     delivery: [
       {
         h: "Delivery",
-        p: "Delivery happens only after acceptance is signed: code, deployment configuration, documentation, and a list of known limitations.",
+        p: "Delivery happens only after acceptance is signed: code, deployment configuration, documentation, and a list of known limitations. Ownership of project-specific IP created for your engagement is defined in the signed contract — assets we reuse from our validated baseline remain ours; what we build specifically for the project is transferred per the contract.",
       },
       {
         h: "Acceptance",

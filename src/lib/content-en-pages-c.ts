@@ -20,13 +20,15 @@ export const enPagesC = {
         level: "Level C — Engineering Module",
         name: "Adapter Module",
         problem:
-          "Problem: every client system used to require rewriting connection, retry and error handling from scratch for outbound integration.",
+          "Problem: every connected system used to require rewriting connection, retry and error handling from scratch for outbound integration.",
         capability:
           "Capability: reusable outbound adapter pattern — request/response mapping, retries, error translation, and outbound audit entries.",
         evidence:
           "Evidence: 10 passing tests. Matured to Template Validated (automated tests plus one full template replication exercise).",
         limitation:
           "Known limitation: mock transport only — no live external system integration; HTTP(S) synchronous calls.",
+        value:
+          "What it proves commercially: the outbound-integration chain in WP-03 can be reproduced as a reusable adapter pattern.",
       },
       {
         id: "C-02",
@@ -40,6 +42,8 @@ export const enPagesC = {
           "Evidence: 14 passing tests. Matured to Template Validated (automated tests plus one full template replication exercise).",
         limitation:
           "Known limitation: single-level approval; decided_by is an asserted value (no identity system); service layer only.",
+        value:
+          "What it proves commercially: the approval-gate and audit-trail layers of WP-06 can be reproduced as a controlled execution core.",
       },
       {
         id: "B-01",
@@ -53,6 +57,8 @@ export const enPagesC = {
           "Evidence: 18 passing tests (end-to-end flow). Matured to Template Validated (automated tests plus one full template replication exercise).",
         limitation:
           "Known limitation: case-local in-memory event layer (not the XP-4 Redis implementation) — no PEL, no dead-letter queue, simple requeue.",
+        value:
+          "What it proves commercially: the governed event-to-execution chain of WP-05 can be reproduced end to end, with human approval inside the loop.",
       },
       {
         id: "A-02",
@@ -66,6 +72,8 @@ export const enPagesC = {
           "Evidence: 28 passing tests — engineering behavior verified. Case-level automated evidence (Level L3). No real LLM in the loop — proposals come from a deterministic mock generator, disclosed as such.",
         limitation:
           "Known limitation: independent reconstruction — not a client project. Execution stays inside an explicitly labeled in-memory SANDBOX working copy (mock transport); the legacy system is a simulated fixture; no production-readiness claim.",
+        value:
+          "What it proves commercially: a controlled AI modernization path — proposal, human decision, sandbox execution, recovery — is reproducible end to end.",
       },
       {
         id: "A-01",
@@ -79,6 +87,8 @@ export const enPagesC = {
           "Evidence: 29 passing tests — engineering behavior verified. Case-level automated evidence (Level L3). Runs in a reconstruction/test environment (in-memory SQLite), not a production database architecture.",
         limitation:
           "Known limitation: independent reconstruction — not a client project. Reconstruction/test environment only (in-memory SQLite, mock transports, synthetic data); the readiness interface exposes clean data only — no AI functionality; no production-scale capability claimed.",
+        value:
+          "What it proves commercially: the mapping → validation-gate → unified-layer chain behind WP-02 / WP-04 is reproducible for heterogeneous sources.",
       },
     ],
   },

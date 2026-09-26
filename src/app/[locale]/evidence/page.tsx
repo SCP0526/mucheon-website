@@ -54,6 +54,7 @@ export default async function LocaleEvidencePage({ params }: Props) {
               <p className="mt-2 text-sm text-muted-foreground">{c.capability}</p>
               <p className="mt-2 text-sm text-muted-foreground">{c.evidence}</p>
               <p className="mt-2 text-xs text-muted-foreground/80">{c.limitation}</p>
+              <p className="mt-2 text-xs text-foreground/80">{c.value}</p>
               <p className="mt-auto pt-4 text-xs font-medium text-primary/90">
                 {t.evidence.caseNote}
               </p>
