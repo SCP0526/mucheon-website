@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import { ThemeProvider } from "@/components/theme-provider";
+import { LocaleLang } from "@/components/locale-lang";
 import { siteConfig } from "@/lib/site-config";
 
 const geistSans = Geist({
@@ -61,6 +62,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
+          <LocaleLang />
           {children}
         </ThemeProvider>
       </body>
